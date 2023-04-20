@@ -1,5 +1,15 @@
 @charset "ISO-8859-1";
 
+/*
+*Ameliorer la repartition de l'espace dans la section left
+*Rendre les liste + jolie 
+*Probleme de couleur sur les h3
+*La font est pas incroyable, à changer! 
+*Probleme avec les tailles des titres 
+*Le header pourrait etre + jolie
+*Le header en responive ... bon
+*le footer en responsive à revoir
+*/
 
 * {
 	box-sizing: border-box;
@@ -37,6 +47,12 @@ header {
 	z-index: 1;
 }
 
+
+h1, h2, h3{
+    text-transform: uppercase;
+    font-family: 'Crimson Text', serif;
+}
+
 h1{
     font-size: 3em;
 }
@@ -52,10 +68,6 @@ h3{
 h5{
     font-style: italic;
 }
-h1, h2, h3{
-    text-transform: uppercase;
-    font-family: 'Crimson Text', serif;
-}
 
 #contact{
     margin-top: 4rem;
@@ -69,6 +81,7 @@ main{
 }
 
 section{
+    padding-top: 2rem;
     border: 0.7px solid #edeced;
 }
 
@@ -81,6 +94,7 @@ article{
 }
 
 h3{
+   
     color: #24523b;
     width: 100%;
     padding-bottom: 1rem;
@@ -110,6 +124,10 @@ li{
     padding-left: 2rem;
 }
 
+.btw{
+    display: flex;
+    justify-content: space-between;
+}
 .right{
     width: 100%;
     padding-left: 2rem;
@@ -128,7 +146,7 @@ li{
 
 .line{
     width: 50%;
-    margin: auto;
+    margin: 2rem auto;
     color: #24523b;
     border: 0.5px solid black;
     
