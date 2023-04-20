@@ -108,11 +108,6 @@ li{
     padding-left: 2rem;
 }
 
-.left{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
 .right{
     width: 100%;
@@ -157,7 +152,11 @@ footer {
 
 }
 
-@media (max-width: 600px){
+
+/* ----------------------------------------------------------------------------------------- */
+
+
+@media (max-width: 768px){
 
     main{
         display: flex;
@@ -174,6 +173,16 @@ footer {
 
     #photo_id{
         display: none;
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .icon{
+        margin: 1rem;
+        width: auto;
     }
 }
 
