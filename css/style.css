@@ -45,6 +45,13 @@ h2{
     font-size: 0.5rem;
 }
 
+h3{
+    color: #24523b;
+}
+
+h5{
+    font-style: italic;
+}
 h1, h2, h3{
     text-transform: uppercase;
     font-family: 'Crimson Text', serif;
@@ -62,13 +69,12 @@ main{
 }
 
 section{
-    border: 0.7px solid black;
+    border: 0.7px solid #edeced;
 }
 
 article{
     display: flex;
     margin: auto;
-    /*padding-bottom: 1rem;*/
     padding: 1rem 1rem 0 0.3rem;
     flex-direction: column;
     justify-content: space-between;
@@ -97,17 +103,12 @@ li{
     margin-bottom:8px;
     
 }
-/* p{
-    list-style: none;
-    width: 100%;
-} */
 
 .left{
     background-color: #edeced;
     max-width: 35%;
     padding-left: 2rem;
 }
-
 
 .right{
     width: 100%;
@@ -124,10 +125,6 @@ li{
     display: flex;
     justify-content: space-around;
 }
-/*
-.d-flex{
-    justify-content: space-between;
-}*/
 
 .line{
     width: 50%;
