@@ -15,7 +15,7 @@ html {
 body {
 	height: auto;
 	width: 100%;
-	font-family: "montserrat", sans-serif;
+	font-family: "Lato", sans-serif;
 }
 
 /* ----------------------------------------------------------------------------------------- */
@@ -45,6 +45,11 @@ h2{
     font-size: 0.5rem;
 }
 
+h1, h2, h3{
+    text-transform: uppercase;
+    font-family: 'Crimson Text', serif;
+}
+
 #contact{
     margin-top: 4rem;
 }
@@ -70,6 +75,7 @@ article{
 }
 
 h3{
+    color: #24523b;
     width: 100%;
     padding-bottom: 1rem;
 }
@@ -78,14 +84,18 @@ h4{
     font-size: 16px;
 }
 
+h5{
+    margin-bottom: 2rem;
+}
+
 ul {
     list-style: none;
-    margin-left:0;
-    padding-left:0;
+    margin-left:-2rem;
 }
 
 li{
-    margin-bottom:15px;
+    margin-bottom:8px;
+    
 }
 /* p{
     list-style: none;
@@ -93,8 +103,15 @@ li{
 } */
 
 .left{
+    background-color: #edeced;
     max-width: 35%;
     padding-left: 2rem;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .right{
@@ -118,9 +135,11 @@ li{
 }*/
 
 .line{
-    width: 9rem;
-    border: 1px solid black;
-    margin : 2rem;
+    width: 50%;
+    margin: auto;
+    color: #24523b;
+    border: 0.5px solid black;
+    
 }
 
 /* ----------------------------------------------------------------------------------------- */
@@ -136,6 +155,26 @@ footer {
 	display: flex;
 	justify-content: space-around;
 
+}
+
+@media (max-width: 600px){
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left{
+        max-width: 100%;
+    }
+
+    .line{
+        width: 80%;
+    }
+
+    #photo_id{
+        display: none;
+    }
 }
 
 
